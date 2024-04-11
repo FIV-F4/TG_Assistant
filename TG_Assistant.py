@@ -30,7 +30,11 @@ async def add_rent(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
         await update.message.reply_text(f'Произошла ошибка: {e}')
 
 def main() -> None:
-    application = Application.builder().token("7163360485:AAFedGG0jckHDN7WH5BhITWRVtjjXleNuUQ").build()
+
+    with open("token.txt", "r") as file:
+        token = file.read().strip()
+
+    application = Application.builder().token(token).build()
 
     application.add_handler(CommandHandler("start", start))
     application.add_handler(CommandHandler("addrent", add_rent))

@@ -8,7 +8,8 @@ __pycache__/
 
 # Файлы с данными пользователей
 *.xlsx
-
+# Файлы с токеном телеграмм бота
+token.txt
 # Distribution / packaging
 .Python
 build/
