@@ -31,6 +31,7 @@ async def add_rent(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
 
 def main() -> None:
 
+
     with open("token.txt", "r") as file:
         token = file.read().strip()
 
