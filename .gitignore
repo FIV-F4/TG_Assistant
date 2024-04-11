@@ -6,6 +6,9 @@ __pycache__/
 # C extensions
 *.so
 
+# Файлы с данными пользователей
+*.xlsx
+
 # Distribution / packaging
 .Python
 build/
